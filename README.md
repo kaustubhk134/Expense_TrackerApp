@@ -1,13 +1,25 @@
-# GitHub Codespaces ♥️ Flask
+# Expense Tracker
 
-Welcome to your shiny new Codespace running Flask! We've got everything fired up and running for you to explore Flask.
- 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+A simple web-based application for tracking expenses, setting budgets, and visualizing spending patterns using Python and Flask.
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+## Features
+- **Add Expenses**: Track expenses with descriptions, amounts, and dates.
+- **Set Budget**: Define a spending limit and receive warnings if exceeded.
+- **Visualize Spending**: View expenses over time using interactive plots.
 
-To run this application:
+## Technology Stack
+- **Backend**: Python (Flask)
+- **Frontend**: HTML, CSS (with Bootstrap or custom styles)
+- **Visualization**: Matplotlib
 
-```
-flask --debug run
-```
+## Getting Started
+
+### Prerequisites
+- Python 3.x
+- Pip (Python package manager)
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-kaustubhk134/Expense_TrackerApp.git
+   cd Expense_TrackerApp
