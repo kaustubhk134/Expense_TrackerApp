@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        {% if budget %}
+            <h2>Total Budget: ₹{{ budget }}</h2>
+        {% endif %}
+        {% if over_budget %}
+            <p class="warning">Warning: Total expenses exceed budget.</p>
+        {% endif %}
+        <h2>Total Expenses: ₹{{ total }}</h2>
+        <ul>
+            {% for expense in expenses %}
+                <li>{{ expense.description }} - ₹{{ expense.amount }} - Date: {{ expense.date }}</li> <!-- Include date -->
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('add_expense') }}" class="btn">Add Expense</a>
+        <a href="{{ url_for('set_budget') }}" class="btn">Set Budget</a>
+        <a href="{{ url_for('plot') }}" class="btn">Plot Expenses</a> <!-- Button for plotting -->
+    </div>
+</body>
+</html>
