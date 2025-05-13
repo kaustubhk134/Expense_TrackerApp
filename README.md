@@ -21,5 +21,5 @@ A simple web-based application for tracking expenses, setting budgets, and visua
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-kaustubhk134/Expense_TrackerApp.git
+   git clone https://github.com/kaustubhk134/Expense_TrackerApp.git
    cd Expense_TrackerApp
